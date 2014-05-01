@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Kiosk</title>
+
+        <link href="css/main.css" type="text/css" rel="stylesheet" />
+
+        <style>
+            /* home button img config */
+            .home .button .btnstyle .btntext {
+                padding-top: 25px;
+            }
+            .home .button .btnstyle {
+                background-image: url("media/tinman.png");
+                height: 110px;
+                background-size: 100%;
+                background-position: center;
+                border: none;
+                background-color: transparent;
+            }
+
+        </style>
+
+        <script src="js/jquery-2.0.3.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function() {
+/*
+                new Section("Title of Section","ID of content","function() {
+                    Code you want to execute on buttonpress
+                    e.g. document.getElementById("chairmans").play();
+                    or   document.getElementById("chairmans").pause();
+                });
+*/
+                new Section("About Us","aboutus",function() {
+                    console.log("it works");
+                    }); 
+                new Section("Our Stats","stats",function() {
+                        console.log("it works");
+                    }); 
+                new Section("Our Robot","robot",function() {
+                        console.log("it works");
+                    }); 
+                new Section("Engineering Education","edu",function() {
+                        console.log("it works");
+                    }); 
+                new Section("Community Outreach","Outreach",function() {
+                        console.log("it works");
+                    }); 
+                new Section("Entrepreneurship","Entrepreneurship", function() {
+                        console.log("it works");                    
+                    });
+                new Section("Growing FIRST","FIRST", function() {
+                        console.log("it works");
+                    });
+                new Section("Texas Robot Roundup","TRR", function() {
+                        console.log("it works");
+                    });
+                });
+        </script>
+    </head>
+    <body>
+        <div class="buttons"></div>
+        <div class="sections"></div>
+        <div class="home" style="display: none">
+            <div class="button">
+                <div class="btnstyle">
+                    <div class="btntext">Home</div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden">
+            <!--
+
+            <div id="ID of content">
+                html of content
+            </div>
+
+            -->
+            <div id="home">
+                <div style="margin-left: auto; margin-right: auto; height: 400px; width: 400px; border-radius: 200px; background-color: #6699bb"></div>
+            </div>
+            <div id="aboutus">
+                <h1>Team 2158 - ausTIN CANs</h1>
+                <p>Team 2158 - ausTIN CANs, was <strong>founded in 2007</strong>.
+              Since being recognized with the <strong>Rookie All-Star Award</strong>, we’ve
+              worked to <strong>transform our culture</strong> and inspire the next generation of
+              innovators and engineers. As Austinites identifying with the
+              famous motto: <strong>“Keep Austin Weird,”</strong> our team members collaborate to
+              <strong>promote STEM in imaginative ways</strong>. Every year, the CANs introduce
+              new <strong>educational opportunities, activities, and outreach</strong> that feed
+              into Austin’s technology landscape. We support our local partners
+              and teams, <strong>inspire new teams</strong> to join FIRST, and <strong>host competitions</strong>
+              and events. The culmination of our efforts cultivates STEM
+              learning and strengthens FIRST’s message.</p>
+            </div>
+            <div id="stats">
+        <tr>
+          <th scope="row"></th>
+          <td>	
+            <style>
+table.match-table{width:100%;margin-bottom:20px;border:1px solid #ddd; color: blue;}
+table.match-table>thead>tr>th,table.match-table>tbody>tr>th,table.match-table>tfoot>tr>th,table.match-table>thead>tr>td,table.match-table>tbody>tr>td,table.match-table>tfoot>tr>td{padding:8px;line-height:1.42857143;vertical-align:top;border-top:1px solid #ddd}
+table.match-table>thead>tr>th{vertical-align:bottom;border-bottom:2px solid #ddd}
+table.match-table>caption+thead>tr:first-child>th,table.match-table>colgroup+thead>tr:first-child>th,table.match-table>thead:first-child>tr:first-child>th,table.match-table>caption+thead>tr:first-child>td,table.match-table>colgroup+thead>tr:first-child>td,table.match-table>thead:first-child>tr:first-child>td{border-top:0}
+table.match-table>tbody+tbody{border-top:2px solid #ddd}
+table.match-table .table{background-color:#fff}
+table.match-table>thead>tr>th,table.match-table>tbody>tr>th,table.match-table>tfoot>tr>th,table.match-table>thead>tr>td,table.match-table>tbody>tr>td,table.match-table>tfoot>tr>td{padding:5px}
+table.match-table>thead>tr>th,table.match-table>tbody>tr>th,table.match-table>tfoot>tr>th,table.match-table>thead>tr>td,table.match-table>tbody>tr>td,table.match-table>tfoot>tr>td{border:1px solid #ddd}
+table.match-table>thead>tr>th,table.match-table>thead>tr>td{border-bottom-width:2px}
+table.match-table,table.oprTable{padding:3px 0;margin:0 0 1em 0;width:100%;margin-left:auto;background-color:#fff}
+table.match-table tr,table.oprTable tr{padding:3px 0}
+table.match-table tr.key,table.oprTable tr.key{background-color:#f0f0f0}
+table.match-table th,table.oprTable th{font-weight:bold;text-align:center;vertical-align:middle!important;padding:3px}
+table.match-table td,table.oprTable td{text-align:center;vertical-align:middle!important;padding:3px}
+table.match-table td.red{background-color:#fee}
+table.match-table td.blue{background-color:#eef}
+table.match-table td.redScore{background-color:#fdd}
+table.match-table td.blueScore{background-color:#ddf}
+table.match-table td.winner{font-weight:bold}
+table.match-table td.icon,table.match-table th.icon{margin:0;padding:3px 0 0 0;font-size:.5em}
+table.match-table td.win{background-color:#90ee90}
+table.match-table td.lose{background-color:#f08080}
+table.match-table td.tie{background-color:#d3d3d3}
+/*.row{margin-left:-15px;margin-right:-15px}
+.col-sm-8{width:66.66666667%}
+.col-sm-4{width:33.33333333%} */
+.invisible{visibility:hidden}
+.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}
+.hidden{display:none!important;visibility:hidden!important}
+.affix{position:fixed}
+@-ms-viewport{width:device-width}
+.visible-xs,tr.visible-xs,th.visible-xs,td.visible-xs{display:none!important}
+@media(max-width:767px){.visible-xs{display:block!important}
+table.visible-xs{display:table}
+tr.visible-xs{display:table-row!important}
+th.visible-xs,td.visible-xs{display:table-cell!important}
+}
+.visible-sm,tr.visible-sm,th.visible-sm,td.visible-sm{display:none!important}
+@media(min-width:768px) and (max-width:991px){.visible-sm{display:block!important}
+table.visible-sm{display:table}
+tr.visible-sm{display:table-row!important}
+th.visible-sm,td.visible-sm{display:table-cell!important}
+}
+.visible-md,tr.visible-md,th.visible-md,td.visible-md{display:none!important}
+@media(min-width:992px) and (max-width:1199px){.visible-md{display:block!important}
+table.visible-md{display:table}
+tr.visible-md{display:table-row!important}
+th.visible-md,td.visible-md{display:table-cell!important}
+}
+.visible-lg,tr.visible-lg,th.visible-lg,td.visible-lg{display:none!important}
+@media(min-width:1200px){.visible-lg{display:block!important}
+table.visible-lg{display:table}
+tr.visible-lg{display:table-row!important}
+th.visible-lg,td.visible-lg{display:table-cell!important}
+}
+@media(max-width:767px){.hidden-xs,tr.hidden-xs,th.hidden-xs,td.hidden-xs{display:none!important}
+}
+@media(min-width:768px) and (max-width:991px){.hidden-sm,tr.hidden-sm,th.hidden-sm,td.hidden-sm{display:none!important}
+}
+@media(min-width:992px) and (max-width:1199px){.hidden-md,tr.hidden-md,th.hidden-md,td.hidden-md{display:none!important}
+}
+@media(min-width:1200px){.hidden-lg,tr.hidden-lg,th.hidden-lg,td.hidden-lg{display:none!important}
+}
+.visible-print,tr.visible-print,th.visible-print,td.visible-print{display:none!important}
+
+	        </style>
+            <div class="textarea long">
+              <h1>Team 2158 Performance Statistics</h1>
+         
+            <p>Overall, team 2158 is <strong>22-8-0</strong> in 2014 prior to the Aerial Assist World Championships.</p>
+          
+            <hr />
+          
+            <div class="row" id="2014txsa">
+              <div class="col-sm-4">
+                <h3>Alamo Regional sponsored by Rackspace Hosting</h3>
+                <p>
+                   in San Antonio, TX, USA
+                   Feb 27th - Mar 1st, 2014
+                </p>
+
+                
+                <p>Team 2158
+                  was <strong>Rank 12</strong>
+                  
+                  with a record of
+                  <strong>7-5-0</strong>
+                  
+
+                  
+                  and won the following awards:
+                  <ul>
+                  
+                  
+                  
+                    
+                    <li>Engineering Inspiration</li>
+                    
+                  
+                  
+                  
+                  </ul>
+                  
+                </p>
+                
+              </div>
+              <div class="col-sm-8" style="margin-top: 1em">
+                
+                  
+                    <table class="match-table">
+  <thead>
+    <tr class="key visible-lg">
+  <th>Match</th>
+  <th colspan="6">Red Alliance</th>
+  <th colspan="6">Blue Alliance</th>
+  <th colspan="2">Scores</th>
+</tr>
+
+<tr class="key hidden-lg">
+  <th rowspan="2">Match</th>
+  <th colspan="12">Red Alliance</th>
+  <th colspan="2">Red Score</th>
+</tr>
+<tr class="key hidden-lg">
+  <th colspan="12">Blue Alliance</th>
+  <th colspan="2">Blue Score</th>
+</tr>
+  </thead>
+
+  <tbody>
+    
+      <tr class="key"><th colspan="15">Qualifications</th></tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 2</td>
+  
+  <td colspan="2" class="red">2158</td>
+  <td colspan="2" class="red">2985</td>
+  <td colspan="2" class="red">4670</td>
+  <td colspan="2" class="blue winner">3700</td>
+  <td colspan="2" class="blue winner">190</td>
+  <td colspan="2" class="blue winner">2982</td>
+  
+  <td class="redScore">1</td>
+  <td class="blueScore winner">112</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 2</td>
+  
+  <td class="red" colspan="4">2158</td>
+  <td class="red" colspan="4">2985</td>
+  <td class="red" colspan="4">4670</td>
+  
+  <td class="redScore" colspan="2">1</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">3700</td>
+  <td class="blue winner" colspan="4">190</td>
+  <td class="blue winner" colspan="4">2982</td>
+  
+  <td class="blueScore winner" colspan="2">112</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 13</td>
+  
+  <td colspan="2" class="red">441</td>
+  <td colspan="2" class="red">3240</td>
+  <td colspan="2" class="red">4670</td>
+  <td colspan="2" class="blue winner">3035</td>
+  <td colspan="2" class="blue winner">2158</td>
+  <td colspan="2" class="blue winner">653</td>
+  
+  <td class="redScore">51</td>
+  <td class="blueScore winner">132</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 13</td>
+  
+  <td class="red" colspan="4">441</td>
+  <td class="red" colspan="4">3240</td>
+  <td class="red" colspan="4">4670</td>
+  
+  <td class="redScore" colspan="2">51</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">3035</td>
+  <td class="blue winner" colspan="4">2158</td>
+  <td class="blue winner" colspan="4">653</td>
+  
+  <td class="blueScore winner" colspan="2">132</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 25</td>
+  
+  <td colspan="2" class="red winner">5103</td>
+  <td colspan="2" class="red winner">624</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="blue">3366</td>
+  <td colspan="2" class="blue">3345</td>
+  <td colspan="2" class="blue">4747</td>
+  
+  <td class="redScore winner">131</td>
+  <td class="blueScore">26</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 25</td>
+  
+  <td class="red winner" colspan="4">5103</td>
+  <td class="red winner" colspan="4">624</td>
+  <td class="red winner" colspan="4">2158</td>
+  
+  <td class="redScore winner" colspan="2">131</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">3366</td>
+  <td class="blue" colspan="4">3345</td>
+  <td class="blue" colspan="4">4747</td>
+  
+  <td class="blueScore" colspan="2">26</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 37</td>
+  
+  <td colspan="2" class="red winner">2936</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="red winner">4610</td>
+  <td colspan="2" class="blue">3080</td>
+  <td colspan="2" class="blue">2952</td>
+  <td colspan="2" class="blue">2833</td>
+  
+  <td class="redScore winner">8</td>
+  <td class="blueScore">7</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 37</td>
+  
+  <td class="red winner" colspan="4">2936</td>
+  <td class="red winner" colspan="4">2158</td>
+  <td class="red winner" colspan="4">4610</td>
+  
+  <td class="redScore winner" colspan="2">8</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">3080</td>
+  <td class="blue" colspan="4">2952</td>
+  <td class="blue" colspan="4">2833</td>
+  
+  <td class="blueScore" colspan="2">7</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 49</td>
+  
+  <td colspan="2" class="red">3337</td>
+  <td colspan="2" class="red">3103</td>
+  <td colspan="2" class="red">2969</td>
+  <td colspan="2" class="blue winner">3802</td>
+  <td colspan="2" class="blue winner">2158</td>
+  <td colspan="2" class="blue winner">704</td>
+  
+  <td class="redScore">27</td>
+  <td class="blueScore winner">61</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 49</td>
+  
+  <td class="red" colspan="4">3337</td>
+  <td class="red" colspan="4">3103</td>
+  <td class="red" colspan="4">2969</td>
+  
+  <td class="redScore" colspan="2">27</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">3802</td>
+  <td class="blue winner" colspan="4">2158</td>
+  <td class="blue winner" colspan="4">704</td>
+  
+  <td class="blueScore winner" colspan="2">61</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 55</td>
+  
+  <td colspan="2" class="red">4219</td>
+  <td colspan="2" class="red">3335</td>
+  <td colspan="2" class="red">2158</td>
+  <td colspan="2" class="blue winner">3743</td>
+  <td colspan="2" class="blue winner">3614</td>
+  <td colspan="2" class="blue winner">2468</td>
+  
+  <td class="redScore">96</td>
+  <td class="blueScore winner">126</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 55</td>
+  
+  <td class="red" colspan="4">4219</td>
+  <td class="red" colspan="4">3335</td>
+  <td class="red" colspan="4">2158</td>
+  
+  <td class="redScore" colspan="2">96</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">3743</td>
+  <td class="blue winner" colspan="4">3614</td>
+  <td class="blue winner" colspan="4">2468</td>
+  
+  <td class="blueScore winner" colspan="2">126</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 66</td>
+  
+  <td colspan="2" class="red winner">118</td>
+  <td colspan="2" class="red winner">4597</td>
+  <td colspan="2" class="red winner">4981</td>
+  <td colspan="2" class="blue">3037</td>
+  <td colspan="2" class="blue">2158</td>
+  <td colspan="2" class="blue">148</td>
+  
+  <td class="redScore winner">100</td>
+  <td class="blueScore">35</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 66</td>
+  
+  <td class="red winner" colspan="4">118</td>
+  <td class="red winner" colspan="4">4597</td>
+  <td class="red winner" colspan="4">4981</td>
+  
+  <td class="redScore winner" colspan="2">100</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">3037</td>
+  <td class="blue" colspan="4">2158</td>
+  <td class="blue" colspan="4">148</td>
+  
+  <td class="blueScore" colspan="2">35</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 82</td>
+  
+  <td colspan="2" class="red">3305</td>
+  <td colspan="2" class="red">3679</td>
+  <td colspan="2" class="red">4378</td>
+  <td colspan="2" class="blue winner">2158</td>
+  <td colspan="2" class="blue winner">3337</td>
+  <td colspan="2" class="blue winner">3320</td>
+  
+  <td class="redScore">11</td>
+  <td class="blueScore winner">78</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 82</td>
+  
+  <td class="red" colspan="4">3305</td>
+  <td class="red" colspan="4">3679</td>
+  <td class="red" colspan="4">4378</td>
+  
+  <td class="redScore" colspan="2">11</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">2158</td>
+  <td class="blue winner" colspan="4">3337</td>
+  <td class="blue winner" colspan="4">3320</td>
+  
+  <td class="blueScore winner" colspan="2">78</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 92</td>
+  
+  <td colspan="2" class="red winner">2190</td>
+  <td colspan="2" class="red winner">5052</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="blue">1255</td>
+  <td colspan="2" class="blue">2789</td>
+  <td colspan="2" class="blue">4412</td>
+  
+  <td class="redScore winner">51</td>
+  <td class="blueScore">15</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 92</td>
+  
+  <td class="red winner" colspan="4">2190</td>
+  <td class="red winner" colspan="4">5052</td>
+  <td class="red winner" colspan="4">2158</td>
+  
+  <td class="redScore winner" colspan="2">51</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">1255</td>
+  <td class="blue" colspan="4">2789</td>
+  <td class="blue" colspan="4">4412</td>
+  
+  <td class="blueScore" colspan="2">15</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 103</td>
+  
+  <td colspan="2" class="red winner">499</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="red winner">57</td>
+  <td colspan="2" class="blue">2881</td>
+  <td colspan="2" class="blue">2966</td>
+  <td colspan="2" class="blue">4332</td>
+  
+  <td class="redScore winner">92</td>
+  <td class="blueScore">37</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 103</td>
+  
+  <td class="red winner" colspan="4">499</td>
+  <td class="red winner" colspan="4">2158</td>
+  <td class="red winner" colspan="4">57</td>
+  
+  <td class="redScore winner" colspan="2">92</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">2881</td>
+  <td class="blue" colspan="4">2966</td>
+  <td class="blue" colspan="4">4332</td>
+  
+  <td class="blueScore" colspan="2">37</td>
+</tr>
+      
+    
+
+    
+
+    
+      <tr class="key"><th colspan="15">Quarterfinals</th></tr>
+      
+        <tr class="visible-lg">
+  <td>Quarters 3 Match 1</td>
+  
+  <td colspan="2" class="red winner">2789</td>
+  <td colspan="2" class="red winner">148</td>
+  <td colspan="2" class="red winner">2468</td>
+  <td colspan="2" class="blue">3337</td>
+  <td colspan="2" class="blue">2158</td>
+  <td colspan="2" class="blue">2386</td>
+  
+  <td class="redScore winner">155</td>
+  <td class="blueScore">27</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quarters 3 Match 1</td>
+  
+  <td class="red winner" colspan="4">2789</td>
+  <td class="red winner" colspan="4">148</td>
+  <td class="red winner" colspan="4">2468</td>
+  
+  <td class="redScore winner" colspan="2">155</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">3337</td>
+  <td class="blue" colspan="4">2158</td>
+  <td class="blue" colspan="4">2386</td>
+  
+  <td class="blueScore" colspan="2">27</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quarters 3 Match 2</td>
+  
+  <td colspan="2" class="red winner">2789</td>
+  <td colspan="2" class="red winner">148</td>
+  <td colspan="2" class="red winner">2468</td>
+  <td colspan="2" class="blue">3337</td>
+  <td colspan="2" class="blue">2386</td>
+  <td colspan="2" class="blue">2158</td>
+  
+  <td class="redScore winner">130</td>
+  <td class="blueScore">33</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quarters 3 Match 2</td>
+  
+  <td class="red winner" colspan="4">2789</td>
+  <td class="red winner" colspan="4">148</td>
+  <td class="red winner" colspan="4">2468</td>
+  
+  <td class="redScore winner" colspan="2">130</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">3337</td>
+  <td class="blue" colspan="4">2386</td>
+  <td class="blue" colspan="4">2158</td>
+  
+  <td class="blueScore" colspan="2">33</td>
+</tr>
+      
+    
+
+    
+
+    
+  </tbody>
+</table>
+                  
+                
+              </div>
+            </div>
+            <hr>
+<div class="row" id="2014txda">
+              <div class="col-sm-4">
+                <h3>Dallas Regional</h3>
+                <p>
+                   in Irving, TX, USA
+                   Mar 13th - Mar 15th, 2014
+                </p>
+               <p>Team 2158
+                  was <strong>Rank 2</strong>
+                  with a record of
+                  <strong>15-3-0</strong>
+                  and won the following awards:
+                  <ul>
+                    <li>Regional Finalist</li>
+                    <li>Entrepreneurship Award sponsored by Kleiner Perkins Caufield and Byers</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-sm-8" style="margin-top: 1em">
+                
+                  
+                    <table class="match-table">
+  <thead>
+    <tr class="key visible-lg">
+  <th>Match</th>
+  <th colspan="6">Red Alliance</th>
+  <th colspan="6">Blue Alliance</th>
+  <th colspan="2">Scores</th>
+</tr>
+
+<tr class="key hidden-lg">
+  <th rowspan="2">Match</th>
+  <th colspan="12">Red Alliance</th>
+  <th colspan="2">Red Score</th>
+</tr>
+<tr class="key hidden-lg">
+  <th colspan="12">Blue Alliance</th>
+  <th colspan="2">Blue Score</th>
+</tr>
+  </thead>
+
+  <tbody>
+    
+      <tr class="key"><th colspan="15">Qualifications</th></tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 7</td>
+  
+  <td colspan="2" class="red winner">4192</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="red winner">3282</td>
+  <td colspan="2" class="blue">3481</td>
+  <td colspan="2" class="blue">3616</td>
+  <td colspan="2" class="blue">4354</td>
+  
+  <td class="redScore winner">120</td>
+  <td class="blueScore">78</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 7</td>
+  
+  <td class="red winner" colspan="4">4192</td>
+  <td class="red winner" colspan="4">2158</td>
+  <td class="red winner" colspan="4">3282</td>
+  
+  <td class="redScore winner" colspan="2">120</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">3481</td>
+  <td class="blue" colspan="4">3616</td>
+  <td class="blue" colspan="4">4354</td>
+  
+  <td class="blueScore" colspan="2">78</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 12</td>
+  
+  <td colspan="2" class="red">1477</td>
+  <td colspan="2" class="red">4063</td>
+  <td colspan="2" class="red">2805</td>
+  <td colspan="2" class="blue winner">3043</td>
+  <td colspan="2" class="blue winner">148</td>
+  <td colspan="2" class="blue winner">2158</td>
+  
+  <td class="redScore">82</td>
+  <td class="blueScore winner">85</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 12</td>
+  
+  <td class="red" colspan="4">1477</td>
+  <td class="red" colspan="4">4063</td>
+  <td class="red" colspan="4">2805</td>
+  
+  <td class="redScore" colspan="2">82</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">3043</td>
+  <td class="blue winner" colspan="4">148</td>
+  <td class="blue winner" colspan="4">2158</td>
+  
+  <td class="blueScore winner" colspan="2">85</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 16</td>
+  
+  <td colspan="2" class="red">4063</td>
+  <td colspan="2" class="red">4589</td>
+  <td colspan="2" class="red">4192</td>
+  <td colspan="2" class="blue winner">2158</td>
+  <td colspan="2" class="blue winner">1296</td>
+  <td colspan="2" class="blue winner">1477</td>
+  
+  <td class="redScore">55</td>
+  <td class="blueScore winner">106</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 16</td>
+  
+  <td class="red" colspan="4">4063</td>
+  <td class="red" colspan="4">4589</td>
+  <td class="red" colspan="4">4192</td>
+  
+  <td class="redScore" colspan="2">55</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">2158</td>
+  <td class="blue winner" colspan="4">1296</td>
+  <td class="blue winner" colspan="4">1477</td>
+  
+  <td class="blueScore winner" colspan="2">106</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 28</td>
+  
+  <td colspan="2" class="red">3355</td>
+  <td colspan="2" class="red">2747</td>
+  <td colspan="2" class="red">3676</td>
+  <td colspan="2" class="blue winner">5242</td>
+  <td colspan="2" class="blue winner">1860</td>
+  <td colspan="2" class="blue winner">2158</td>
+  
+  <td class="redScore">11</td>
+  <td class="blueScore winner">130</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 28</td>
+  
+  <td class="red" colspan="4">3355</td>
+  <td class="red" colspan="4">2747</td>
+  <td class="red" colspan="4">3676</td>
+  
+  <td class="redScore" colspan="2">11</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">5242</td>
+  <td class="blue winner" colspan="4">1860</td>
+  <td class="blue winner" colspan="4">2158</td>
+  
+  <td class="blueScore winner" colspan="2">130</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 31</td>
+  
+  <td colspan="2" class="red">3735</td>
+  <td colspan="2" class="red">2158</td>
+  <td colspan="2" class="red">3802</td>
+  <td colspan="2" class="blue winner">3005</td>
+  <td colspan="2" class="blue winner">1860</td>
+  <td colspan="2" class="blue winner">231</td>
+  
+  <td class="redScore">87</td>
+  <td class="blueScore winner">111</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 31</td>
+  
+  <td class="red" colspan="4">3735</td>
+  <td class="red" colspan="4">2158</td>
+  <td class="red" colspan="4">3802</td>
+  
+  <td class="redScore" colspan="2">87</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">3005</td>
+  <td class="blue winner" colspan="4">1860</td>
+  <td class="blue winner" colspan="4">231</td>
+  
+  <td class="blueScore winner" colspan="2">111</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 41</td>
+  
+  <td colspan="2" class="red">3735</td>
+  <td colspan="2" class="red">5272</td>
+  <td colspan="2" class="red">3370</td>
+  <td colspan="2" class="blue winner">4206</td>
+  <td colspan="2" class="blue winner">2158</td>
+  <td colspan="2" class="blue winner">2747</td>
+  
+  <td class="redScore">39</td>
+  <td class="blueScore winner">132</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 41</td>
+  
+  <td class="red" colspan="4">3735</td>
+  <td class="red" colspan="4">5272</td>
+  <td class="red" colspan="4">3370</td>
+  
+  <td class="redScore" colspan="2">39</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">4206</td>
+  <td class="blue winner" colspan="4">2158</td>
+  <td class="blue winner" colspan="4">2747</td>
+  
+  <td class="blueScore winner" colspan="2">132</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 52</td>
+  
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="red winner">231</td>
+  <td colspan="2" class="red winner">2789</td>
+  <td colspan="2" class="blue">1296</td>
+  <td colspan="2" class="blue">5242</td>
+  <td colspan="2" class="blue">2587</td>
+  
+  <td class="redScore winner">125</td>
+  <td class="blueScore">122</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 52</td>
+  
+  <td class="red winner" colspan="4">2158</td>
+  <td class="red winner" colspan="4">231</td>
+  <td class="red winner" colspan="4">2789</td>
+  
+  <td class="redScore winner" colspan="2">125</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">1296</td>
+  <td class="blue" colspan="4">5242</td>
+  <td class="blue" colspan="4">2587</td>
+  
+  <td class="blueScore" colspan="2">122</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 60</td>
+  
+  <td colspan="2" class="red">3847</td>
+  <td colspan="2" class="red">4206</td>
+  <td colspan="2" class="red">647</td>
+  <td colspan="2" class="blue winner">2805</td>
+  <td colspan="2" class="blue winner">3413</td>
+  <td colspan="2" class="blue winner">2158</td>
+  
+  <td class="redScore">99</td>
+  <td class="blueScore winner">120</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 60</td>
+  
+  <td class="red" colspan="4">3847</td>
+  <td class="red" colspan="4">4206</td>
+  <td class="red" colspan="4">647</td>
+  
+  <td class="redScore" colspan="2">99</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue winner" colspan="4">2805</td>
+  <td class="blue winner" colspan="4">3413</td>
+  <td class="blue winner" colspan="4">2158</td>
+  
+  <td class="blueScore winner" colspan="2">120</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 67</td>
+  
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="red winner">5057</td>
+  <td colspan="2" class="red winner">1642</td>
+  <td colspan="2" class="blue">3310</td>
+  <td colspan="2" class="blue">1296</td>
+  <td colspan="2" class="blue">3413</td>
+  
+  <td class="redScore winner">100</td>
+  <td class="blueScore">95</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 67</td>
+  
+  <td class="red winner" colspan="4">2158</td>
+  <td class="red winner" colspan="4">5057</td>
+  <td class="red winner" colspan="4">1642</td>
+  
+  <td class="redScore winner" colspan="2">100</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">3310</td>
+  <td class="blue" colspan="4">1296</td>
+  <td class="blue" colspan="4">3413</td>
+  
+  <td class="blueScore" colspan="2">95</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 74</td>
+  
+  <td colspan="2" class="red winner">4063</td>
+  <td colspan="2" class="red winner">3847</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="blue">4335</td>
+  <td colspan="2" class="blue">1817</td>
+  <td colspan="2" class="blue">359</td>
+  
+  <td class="redScore winner">210</td>
+  <td class="blueScore">141</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 74</td>
+  
+  <td class="red winner" colspan="4">4063</td>
+  <td class="red winner" colspan="4">3847</td>
+  <td class="red winner" colspan="4">2158</td>
+  
+  <td class="redScore winner" colspan="2">210</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">4335</td>
+  <td class="blue" colspan="4">1817</td>
+  <td class="blue" colspan="4">359</td>
+  
+  <td class="blueScore" colspan="2">141</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 79</td>
+  
+  <td colspan="2" class="red winner">704</td>
+  <td colspan="2" class="red winner">4335</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="blue">4364</td>
+  <td colspan="2" class="blue">4641</td>
+  <td colspan="2" class="blue">5057</td>
+  
+  <td class="redScore winner">135</td>
+  <td class="blueScore">98</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 79</td>
+  
+  <td class="red winner" colspan="4">704</td>
+  <td class="red winner" colspan="4">4335</td>
+  <td class="red winner" colspan="4">2158</td>
+  
+  <td class="redScore winner" colspan="2">135</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">4364</td>
+  <td class="blue" colspan="4">4641</td>
+  <td class="blue" colspan="4">5057</td>
+  
+  <td class="blueScore" colspan="2">98</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quals 83</td>
+  
+  <td colspan="2" class="red winner">647</td>
+  <td colspan="2" class="red winner">5272</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="blue">231</td>
+  <td colspan="2" class="blue">2415</td>
+  <td colspan="2" class="blue">4192</td>
+  
+  <td class="redScore winner">125</td>
+  <td class="blueScore">81</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quals 83</td>
+  
+  <td class="red winner" colspan="4">647</td>
+  <td class="red winner" colspan="4">5272</td>
+  <td class="red winner" colspan="4">2158</td>
+  
+  <td class="redScore winner" colspan="2">125</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">231</td>
+  <td class="blue" colspan="4">2415</td>
+  <td class="blue" colspan="4">4192</td>
+  
+  <td class="blueScore" colspan="2">81</td>
+</tr>
+      
+    
+
+    
+
+    
+      <tr class="key"><th colspan="15">Quarterfinals</th></tr>
+      
+        <tr class="visible-lg">
+  <td>Quarters 3 Match 1</td>
+  
+  <td colspan="2" class="red winner">3481</td>
+  <td colspan="2" class="red winner">2848</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="blue">5057</td>
+  <td colspan="2" class="blue">2789</td>
+  <td colspan="2" class="blue">2587</td>
+  
+  <td class="redScore winner">73</td>
+  <td class="blueScore">53</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quarters 3 Match 1</td>
+  
+  <td class="red winner" colspan="4">3481</td>
+  <td class="red winner" colspan="4">2848</td>
+  <td class="red winner" colspan="4">2158</td>
+  
+  <td class="redScore winner" colspan="2">73</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">5057</td>
+  <td class="blue" colspan="4">2789</td>
+  <td class="blue" colspan="4">2587</td>
+  
+  <td class="blueScore" colspan="2">53</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Quarters 3 Match 2</td>
+  
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="red winner">2848</td>
+  <td colspan="2" class="red winner">3481</td>
+  <td colspan="2" class="blue">5057</td>
+  <td colspan="2" class="blue">2587</td>
+  <td colspan="2" class="blue">2789</td>
+  
+  <td class="redScore winner">214</td>
+  <td class="blueScore">57</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Quarters 3 Match 2</td>
+  
+  <td class="red winner" colspan="4">2158</td>
+  <td class="red winner" colspan="4">2848</td>
+  <td class="red winner" colspan="4">3481</td>
+  
+  <td class="redScore winner" colspan="2">214</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">5057</td>
+  <td class="blue" colspan="4">2587</td>
+  <td class="blue" colspan="4">2789</td>
+  
+  <td class="blueScore" colspan="2">57</td>
+</tr>
+      
+    
+
+    
+      <tr class="key"><th colspan="15">Semifinals</th></tr>
+      
+        <tr class="visible-lg">
+  <td>Semis 2 Match 1</td>
+  
+  <td colspan="2" class="red winner">3481</td>
+  <td colspan="2" class="red winner">2848</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="blue">3005</td>
+  <td colspan="2" class="blue">1860</td>
+  <td colspan="2" class="blue">3997</td>
+  
+  <td class="redScore winner">148</td>
+  <td class="blueScore">147</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Semis 2 Match 1</td>
+  
+  <td class="red winner" colspan="4">3481</td>
+  <td class="red winner" colspan="4">2848</td>
+  <td class="red winner" colspan="4">2158</td>
+  
+  <td class="redScore winner" colspan="2">148</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">3005</td>
+  <td class="blue" colspan="4">1860</td>
+  <td class="blue" colspan="4">3997</td>
+  
+  <td class="blueScore" colspan="2">147</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Semis 2 Match 2</td>
+  
+  <td colspan="2" class="red winner">3481</td>
+  <td colspan="2" class="red winner">2158</td>
+  <td colspan="2" class="red winner">2848</td>
+  <td colspan="2" class="blue">3005</td>
+  <td colspan="2" class="blue">1860</td>
+  <td colspan="2" class="blue">3997</td>
+  
+  <td class="redScore winner">157</td>
+  <td class="blueScore">96</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Semis 2 Match 2</td>
+  
+  <td class="red winner" colspan="4">3481</td>
+  <td class="red winner" colspan="4">2158</td>
+  <td class="red winner" colspan="4">2848</td>
+  
+  <td class="redScore winner" colspan="2">157</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">3005</td>
+  <td class="blue" colspan="4">1860</td>
+  <td class="blue" colspan="4">3997</td>
+  
+  <td class="blueScore" colspan="2">96</td>
+</tr>
+      
+    
+
+    
+      <tr class="key"><th colspan="15">Finals</th></tr>
+      
+        <tr class="visible-lg">
+  <td>Finals 1</td>
+  
+  <td colspan="2" class="red winner">148</td>
+  <td colspan="2" class="red winner">457</td>
+  <td colspan="2" class="red winner">359</td>
+  <td colspan="2" class="blue">3481</td>
+  <td colspan="2" class="blue">2848</td>
+  <td colspan="2" class="blue">2158</td>
+  
+  <td class="redScore winner">160</td>
+  <td class="blueScore">76</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Finals 1</td>
+  
+  <td class="red winner" colspan="4">148</td>
+  <td class="red winner" colspan="4">457</td>
+  <td class="red winner" colspan="4">359</td>
+  
+  <td class="redScore winner" colspan="2">160</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">3481</td>
+  <td class="blue" colspan="4">2848</td>
+  <td class="blue" colspan="4">2158</td>
+  
+  <td class="blueScore" colspan="2">76</td>
+</tr>
+      
+        <tr class="visible-lg">
+  <td>Finals 2</td>
+  
+  <td colspan="2" class="red winner">148</td>
+  <td colspan="2" class="red winner">359</td>
+  <td colspan="2" class="red winner">457</td>
+  <td colspan="2" class="blue">2848</td>
+  <td colspan="2" class="blue">2158</td>
+  <td colspan="2" class="blue">3481</td>
+  
+  <td class="redScore winner">261</td>
+  <td class="blueScore">102</td>
+</tr>
+
+<tr class="hidden-lg">
+  <td rowspan="2">Finals 2</td>
+  
+  <td class="red winner" colspan="4">148</td>
+  <td class="red winner" colspan="4">359</td>
+  <td class="red winner" colspan="4">457</td>
+  
+  <td class="redScore winner" colspan="2">261</td>
+</tr>
+<tr class="hidden-lg">
+  
+  <td class="blue" colspan="4">2848</td>
+  <td class="blue" colspan="4">2158</td>
+  <td class="blue" colspan="4">3481</td>
+  
+  <td class="blueScore" colspan="2">102</td>
+</tr>
+      
+    
+  </tbody>
+</table></div></div>
+            </div>
+          </td>
+        </tr>
+        
+           
+            </div>
+        </div>
+<div id="robot">
+      <tr>
+          <th scope="row"></th>
+          <td>
+            <div class="textarea">
+              <h1>Team 2158 Robot Design</h1>
+                <h2>Capabilities</h2>
+                	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><ul>
+                    <li>One-ball Automous</li>
+                    <li>Truss Shot</li>
+                    <li>Ball acquisition from ground or human player</li>
+                    <li>2-speeds: ~5 ft./s and ~19 ft./s</li>
+                 </ul>
+</td>
+    <td>             <ul>
+                    <li>High Goal</li>
+                    <li>Low Goal</li>
+                    <li>Defense</li>
+                    <li>8-wheel tank-drive</li>
+                    </ul>
+</td>
+  </tr>
+</table>
+                <h2>Design Process</h2> 
+                	<h3>Opportunity Cost</h3>
+                    	<p>
+                        Opportunity cost analysis means considering each mechanism that not only in terms of materials, but also in terms of
+                         time lost for the development of other mechanisms. To examine our design process through opportunity cost, the design
+                         team assigns a value (1-3) for both contribution to scoring goals and difficulty in planning, testing, and fabrication.
+                          We then use a set of tables to weigh contribution to scoring against opportunity cost. Ultimately, time is not
+                           over-invested in mechanisms which present limited benefit to our scoring scheme. 
+                           </p>
+                    <h3>Solidworks Materials Testing</h3>
+                   		<p>
+                        Team 2158’s partnership with UT Austin and ongoing associate and professional level certification programs have 
+                        allowed for a more advanced understanding of the Solidworks CAD software. This year, the team began material stress
+                         testing within Solidworks as part of routine design. The effectiveness of the intake arm struts was assessed 
+                         through this technology.
+						</p>
+                <h2>Manufacturing</h2>
+    				<h3>CNC Mill and CNC Lathe</h3>
+                    	<p>
+                        Advanced CAD techniques have also impacted fabrication. The Can’s acquired CNC mill and lathe technology 
+                        through partnership with the Austin Independent School District and Texas Workforce Commission, and depend 
+                        on this technology to enact precise machining objectives, such as the placement of lightening holes in intake arm 
+                        struts.
+                        </p>
+					<h3>3D Printed Components</h3>
+                    	<p>3D printing provides an advantage during design, by aiding in rapid prototyping efforts, but is also 
+                        used on the Cans’ robot in the form of independent structural elements which were 3D printed to achieve particular 
+                        shapes with relative rigidity and strength of material. The pneumatic holding tanks on the ‘Can-a-pult’ have been 3D
+                         printing.
+							</p>            	
+              	<h2>Programming</h2>
+              		<p>
+                    The programming team for the ausTIN CANs works with LabVIEW, a language developed
+						by National Innstruments. Our purpose is to help the drivers control the robot in an intuitive fashion, and
+                        to allow the robot to do as much as possible wihout need for human input. To do this,
+                        we learn how to interact with computational systems and how to devise logical steps to complete processes.
+                        Our members come from a variety of backgrounds: some have written code for years and pthers haev never
+                        touched an IDE in their lives, but all are welcome and accepted as part of our group. The difference in skill
+                        levels helps us to teach new coders quickly, while imporoving the advanced programmers' skills as well
+                        </p>
+    </div>
+            </div>
+          </td>
+        </tr>
+  
+<div id= edu>
+  <h1>Engineering Education</h1>
+              <p>2158 expands STEM education within Anderson High School and the
+                Austin Independent School District via the influence of FIRST.
+                To grow the program, we <strong>secured $500,000</strong> by impressing funders
+                with our FIRST success, petitioning the school board, and
+                registering for 501(c)3 status. Team-prompted reform at our
+                school has <strong>impacted 200 students this year</strong> and nearly 700 total
+                since 2009. Anderson students can move through 4 different
+                4-year robotics pathways with <strong>13 course options</strong>. Independent
+                Research and Design classes offer advanced participants a
+                setting to undertake <strong>unique projects</strong>, from quadcopters and game
+                development to audible calculators for the blind. Other courses
+                include Electronics and <strong>STEM Entrepreneurship</strong> - a class where
+                students undergo the process of creating and marketing a
+                product. Students can also receive <strong>college credit</strong> and
+                professional CAD certifications. More recently, we inspired an
+                education foundation and the school district to fund
+                construction of a <strong>new 10,000 sq ft engineering building</strong> at
+                Anderson. Soon, up to 500 students each year will have access to
+                technical instruction. This achievement contributes to our goal
+                to make Anderson a <strong>hub for engineering education</strong> in Austin.</p>
+              <p>
+              Members of 2158 are prepared for the future with the skills
+                they acquire from our team and FIRST. In collaboration with UT
+                Austin, one of our team members synthesized <strong>organic solar cells</strong>
+                as an alternative energy source and designed an electrode that
+                determines <strong>lead content in water</strong>. Another member conceptualized
+                and prototyped a <strong>life support system</strong> designed for use in space
+                and was awarded first place at the International Science Fair,
+                research grants, and an internship at the AMES Research Center.
+                His project is being redesigned for <strong>use on the International
+                Space Station</strong>. Because of the impact of our team and FIRST, <strong>88%</strong>
+                of our 60 graduates study <strong>STEM fields</strong> at universities like
+                Harvard, Cornell, Tufts, UT Austin, and the US Naval Academy.
+                Many alumni remain active in FIRST by supporting the CANs,
+                <strong>mentoring</strong> other teams, and <strong>volunteering at events</strong>.</p>
+                            <p>
+              We host <strong>CAN (Careers, Academics, and Networking) Talks</strong> to
+                inform students about STEM careers and academics. These original
+                presentations give insight into STEM degrees, career paths, and
+                projects. Since July of 2012, we’ve hosted speakers from UT,
+                National Instruments (NI), ARM, Qualcomm, and Apple. Students,
+                community members, and local teams are <strong>all invited to attend</strong> CAN
+                Talks, which we make accessible online.
+              </p>
+            </div></div>
+          </td>
+        </tr>
+        <div id= Outreach>
+    <h1>Community Awareness &amp; Outreach</h1>
+                  <p>ausTIN CANs use media and community events to spread FIRST’s
+                    message. Time Warner Cable included our president in a 2011
+                    <strong>Connect A Million Minds PSA</strong>. American Airline’s magazine,
+                    American Way, wrote an <strong>article about our team</strong> and FIRST,
+                    spreading the message to their <strong>8 million monthly fliers</strong>. We’ve
+                    been featured in <strong>Popular Mechanics</strong> and The Austin American
+                    Statesman, and appear often in <strong>local news reports</strong>. We visit the
+                    state capitol every two years to <strong>discuss STEM education with
+                    lawmakers</strong>. This past summer, in an unconventional pairing of
+                    engineering and the arts, we hosted a <strong>Robot Fashion Show</strong> with
+                    team 3320 at Barnes &amp; Noble. We’ve participated in Austin’s
+                    Susan G. Komen Race for the Cure, DorkBot at SXSW, RoboBaskets
+                    Day with the Austin Toros Basketball team, and Austin Maker
+                    Faire. We estimate that we’ve introduced FIRST to at least <strong>1.5
+                    million people</strong>.</p>
+                   <p>We hold Austin CAN! food drives at our events that benefit the Capital Area Food Bank, collecting <strong>5000 </strong>canned goods over the past 3 years. These efforts previously supported the victims of the Bastrop wildfires. The team participated in the <strong>Austin CANstruction project</strong>, promoting the end of hunger in Central Texas by building the “Whale Tail” in memory of a former Anderson science teacher who passed away this fall. Our first can drive started at our end-of-build-season practice event, Austin Robot Roundup (ARR), now in it’s 7th year. ARR gives participants an opportunity to test-drive their creations and engage with other FIRST teams.</p>
+            </div>
+</div>
+          </td>
+        </tr>
+
+        <div id= Entrepreneurship>
+        <h1>Entrepreneurship in Engineering</h1>
+              <p>The ausTIN CANs provide students with real-world experiences.
+                In 2012, we garnered support from Rackspace and 3-Day Startup to
+                co-found <strong>High School Startup</strong>. High School Startup teaches teens
+                the value of entrepreneurship within engineering by engaging
+                them in the <strong>creation of a product</strong>. It takes students through
+                phases of product development - <strong>brainstorming, market research,
+                prototyping, and launch</strong>. Students crowdfunded their projects,
+                including a new gearbox for robotics, a smartphone app for FRC
+                scouting, and a musical instrument tuner. The gearbox group was
+                <strong>featured on the Kickstarter</strong> homepage as a November 2012 Staff
+                Pick; their project video was watched over 15,000 times. The
+                success of the initial High School Startup is <strong>leading to its
+                expansion</strong> and consultation for programs in San Antonio and San
+                Francisco.
+              </p>
+            </div>
+          </td>
+        </tr>
+
+        <div id= FIRST>
+            <td>Growing FIRST</td>
+          <td>
+            <div class="textarea">
+              <h1>Growing &amp; Strengthening <em>FIRST</em></h1>
+              <p>In the last seven years, we’ve hosted <strong>25 robotics
+                  competitions</strong> and volunteered at countless more. We
+                use FLL, FTC, and VEX qualifiers, FRC scrimmages, and other
+                robotics events to grow and promote FIRST. We forged the Austin
+                FTC community in 2007 with the creation and funding of <strong>the
+                  area’s first 14 teams</strong> and proceeded to nurture teams
+                through donation of materials, events, workshops, and training.
+                This year, we again supported the growth of FTC in our community
+                by <strong>donating</strong> material valued at <strong>$20,000</strong>
+                to nearby schools. We encouraged our local middle schools to
+                develop robotics programs to help found <strong>24 VEX teams</strong>
+                and donated VEX kits to UT Austin’s Robotics and Automation
+                Society as part of an ongoing partnership. In conjunction with
+                NI, UT, and Skillpoint Alliance, we hosted <strong>3 training
+                  events for teachers</strong> interested in adding FLL and FTC
+                to their classrooms. Over the past 5 summers, we’ve hosted
+                week-long camps for students in grades 3-10, culminating in
+                research presentations and competitions. Many of the <strong>400
+                  young campers</strong> we’ve introduced to FIRST have joined
+                FRC teams or taken robotics classes in high school. Summer camps
+                provide funding, long-term team sustainability, and growth while
+                inspiring the next generation.
+              </p>
+            </div>
+          </td>
+        </tr>
+    <div id= TRR>
+           <td>Texas Robot Roundup</td>
+            <td>
+                <div class=textarea>
+              <p>During the summer of 2011, we hosted the first annual Texas
+                Robot Roundup, the <strong>first official Texas FRC off-season
+                competition</strong>. Known as TRR, it has served as a model for new
+                off-seasons in our state. NI, Time Warner Cable, FIRST in Texas,
+                and the Alamo Region have partnered with our team to support the
+                event. We work with our parent organization, mentors, and
+                students, and many other local teams and professionals, all who
+                serve as volunteers and provide an opportunity for teams
+                throughout Texas and beyond to compete in the off-season. Teams
+                can <strong>iterate</strong> their designs, <strong>try</strong> out new drivers, <strong>introduce</strong> new
+                members, mentors, sponsors, and community members to FIRST, and
+                <strong>attend workshops</strong>. Workshop topics include robot design,
+                programming, team sustainability, non-engineering mentoring,
+                strategy, and design panel discussions lead by representatives
+                from Texas’ most successful teams to help strengthen the Texas
+                FIRST community. TRR continues to attract more teams each year,
+                growing from 27 robots in 2011 to 42 robots in 2013. This
+                summer, we’ve been invited to <strong>host TRR at NIWeek 2014</strong>.</p>
+              <p>TRR has been a platform for giving Texas teams a strong start.
+                Weeks before the first TRR, we traveled to Killeen, TX, and
+                <strong>helped the pre-rookies</strong>, Shadetree Mechanics Team 3999, to build
+                a robot and compete at TRR. We provided access to parts,
+                facilities, and expertise. Shadetree went on to <strong>win the 2012
+                Alamo Regional Rookie All-Star Award</strong>. Three more of the eight
+                teams that the CANs assisted during their first year similarly
+                received rookie recognitions: 2468, 2881, and 3320. Recently,
+                TIN CANs members <strong>inspired VEX students</strong> at Cedar Park HS to
+                volunteer at TRR and start rookie FRC Team 5052. This coming
+                summer, a <strong>new homeschool pre-rookie team</strong> from north Austin will
+                make their first FIRST appearance at TRR with a robot we’re
+                helping them build during the off-season.</p>
+              <h2>Talk to us to find out how to
+                participate in TRR!</h2>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+    </body>
+</html>
