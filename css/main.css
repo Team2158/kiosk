@@ -1,0 +1,83 @@
+html,
+body {
+    background-color: #FFFF00; //#bfb020
+    color: #2d2d2d;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+	background-attachment: fixed;
+}
+
+.buttons {
+    margin-left: 5%;
+    margin-top: 2%;
+    float: left;
+}
+.button {
+    height: auto;
+}
+.btnstyle {
+    background-color: #6699bb;
+    border-color: #2d2d2d;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btntext {
+    margin-top: 5px;
+    font-size: 2em;
+}
+.sections {
+    width: 60%;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+section {
+    margin-top: 10px;
+    background-color: #6699bb;
+    border-color: #2d2d2d;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    min-height: 50px;
+    padding: 2%;
+}
+#homesection {
+    height: auto;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    padding: auto;
+    width: auto;
+    background-image: url(media/Kinetic%20Background%2003.png);
+}
+.home {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+.hidden {
+    display: none;
+}
+strong {
+	color: white;
+}
+
+h1 {
+	padding: 0em;
+	margin: 0em;
+}
+h1, h2, h3 {
+	color:white;
+}
+
+p {
+    margin-bottom: 0px;
+}
