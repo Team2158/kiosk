@@ -301,45 +301,31 @@
                     Code you want to execute on buttonpress
                     e.g. document.getElementById("chairmans").play();
                     or   document.getElementById("chairmans").pause();
-                });
+                },true/false,x,y);
+                True or False specify whether a generic background will be supplied.
+                X and Y specify a position in relation to the bottom right corner, if left blank, the button is positioned on the left.
+
 */
                 new Section("About Us","aboutus",function() {
                     console.log("it works");
-                    }); 
-                new Section("Our Stats","stats",function() {
-                        console.log("it works");
-                    }); 
-                new Section("Our Robot","robot",function() {
-                        console.log("it works");
-                    }); 
-                new Section("Engineering Education","edu",function() {
-                        console.log("it works");
-                    }); 
-                new Section("Community Outreach","outreach",function() {
-                        console.log("it works");
-                    }); 
-                new Section("Entrepreneurship","entrepreneurship", function() {
-                        console.log("it works");                    
-                    });
-                new Section("Growing FIRST","first", function() {
-                        console.log("it works");
-                    });
-                new Section("Texas Robot Roundup","trr", function() {
-                        console.log("it works");
-                    });
-                });
+                },true); 
+                new Section("Our Stats","stats",function() {},true); 
+                new Section("Our Robot","robot",function() {},true); 
+                new Section("Engineering Education","edu",function() {},true); 
+                new Section("Community Outreach","outreach",function() {},true); 
+                new Section("Entrepreneurship","entrepreneurship", function() {},true);
+                new Section("Growing FIRST","first", function() {},true);
+                new Section("Texas Robot Roundup","trr", function() {},true);
+
+//              THESE TWO ARE IN THE BOTTOM RIGHT
+                new Section("Test","test", function() {},true,5,70);
+                new Section("Home","home", function() {},false,5,5);
+            });
         </script>
     </head>
     <body>
         <div class="buttons"></div>
         <div class="sections"></div>
-        <div class="home" style="display: none">
-            <div class="button">
-                <div class="btnstyle">
-                    <div class="btntext">Home</div>
-                </div>
-            </div>
-        </div>
         <div class="hidden">
             <!--
 

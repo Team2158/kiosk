@@ -1,6 +1,6 @@
 var sections = [];
 
-function Button(name,job) {
+function Button(name,job,x,y) {
     var button = this;
     var space = true;
     this.name = name;
@@ -14,6 +14,9 @@ function Button(name,job) {
     
     $(".buttons").append("<div class=\"button\" id=\""+this.name+"button\"></div>");
     button.html = $(".buttons").find("#"+this.name+"button");
+    if (typeof(x) != "undefined" && typeof(y) != "undefined") {
+        button.html.css("position","fixed").css("right",x+"px").css("bottom",y+"px");
+    }
     button.html.append("<div class=\"btnstyle\"></div>");
     button.btnstyle = this.html.find(".btnstyle");
     button.btnstyle.append("<div class=\"btntext\"></div>");
@@ -25,7 +28,7 @@ function Button(name,job) {
     });
 }
 
-function Section(name,idOfContent,specialJob) {
+function Section(name,idOfContent,specialJob,background,x,y) {
     sections.push(this);
     var section = this;
     var space = true;
@@ -37,8 +40,14 @@ function Section(name,idOfContent,specialJob) {
         }
     }
     
-    $(".sections").append("<section id=\""+this.name+"section\"></section>");
-    this.html = $(".sections").find("#"+this.name+"section");
+    if (background == true) {
+        $(".sections").append("<section id=\""+this.name+"section\"></section>");
+        this.html = $(".sections").find("#"+this.name+"section");
+    }
+    else {
+        $(".sections").append("<div id=\""+this.name+"section\"></div>");
+        this.html = $(".sections").find("#"+this.name+"section");
+    }
 
     this.html.append($("#"+idOfContent));
     
@@ -51,30 +60,10 @@ function Section(name,idOfContent,specialJob) {
         if (typeof(specialJob) != "undefined") {
             specialJob();
         }
-    });
-    this.html.hide();
+    },x,y);
+    for (var i = 0; i < sections.length; i++) {
+        sections[i].html.hide();
+    }
+    this.html.show();
 }
 
-function Home() {
-    sections.push(this);
-    this.name = "home";
-    var section = this;
-    
-    $(".sections").append("<section id=\"homesection\"></section>");
-    this.html = $(".sections").find("#homesection");
-    this.html.append($("#home"));
-    
-    $(".home").click(function() {
-        section.html.delay(200).fadeIn(150);
-    });
-}
-
-$(document).ready(function() {
-    new Home();
-    $(".home").find(".button").click(function() {
-        for (var i = 0; i < sections.length; i++) {
-            sections[i].html.fadeOut(150);
-        }
-        $(".home").fadeOut(150);
-    });
-});
