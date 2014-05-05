@@ -2,7 +2,15 @@ var sections = [];
 
 function Button(name,job) {
     var button = this;
-    this.name = name.replace(" ","");
+    var space = true;
+    this.name = name;
+    while (space == true) {
+        this.name = this.name.replace(" ","");
+        if (this.name.indexOf(" ") == -1) {
+            space = false;
+        }
+    }
+    console.log(this.name);
     
     $(".buttons").append("<div class=\"button\" id=\""+this.name+"button\"></div>");
     button.html = $(".buttons").find("#"+this.name+"button");
@@ -20,8 +28,14 @@ function Button(name,job) {
 function Section(name,idOfContent,specialJob) {
     sections.push(this);
     var section = this;
-    this.name = name.replace(" ","");
-    this.name = this.name.replace(" ","");
+    var space = true;
+    this.name = name;
+    while (space == true) {
+        this.name = this.name.replace(" ","");
+        if (this.name.indexOf(" ") == -1) {
+            space = false;
+        }
+    }
     
     $(".sections").append("<section id=\""+this.name+"section\"></section>");
     this.html = $(".sections").find("#"+this.name+"section");
