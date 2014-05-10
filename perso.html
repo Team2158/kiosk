@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Kiosk</title>
+
+        <link href="css/main.css" type="text/css" rel="stylesheet" />
+
+        <style>
+            /* home button img config */
+            .home .button .btnstyle .btntext {
+                padding-top: 25px;
+            }
+            .home .button .btnstyle {
+                background-image: url("media/tinman.png");
+                height: 110px;
+                background-size: 100%;
+                background-position: center;
+                border: none;
+                background-color: transparent;
+            }
+
+        </style>
+        <script src="js/jquery-2.0.3.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+
+                        $(document).ready(function() {
+/*
+                new Section("Title of Section","ID of content","function() {
+                    Code you want to execute on buttonpress
+                    e.g. document.getElementById("chairmans").play();
+                    or   document.getElementById("chairmans").pause();
+                },true/false,x,y);
+                True or False specify whether a generic background will be supplied.
+                X and Y specify a position in relation to the bottom right corner, if left blank, the button is positioned on the left.
+
+*/
+                new Section("CANstuction","canstruction",function() {
+                    console.log("it works");
+                },true); 
+                new Section("CANtalks","cantalks",function() {},true); 
+                new Section("High School Startup","hss",function() {},true); 
+                new Section("NI Week","ni",function() {},true); 
+                new Section("Robot Design","design",function() {},true); 
+                new Section("Robot Fashion Show","nao", function() {},true);
+                new Section("Texas Robot Roundup","trr", function() {},true);
+
+//              THESE TWO ARE IN THE BOTTOM RIGHT
+                new Section("Home","home", function() {
+                    window.open("main.html","_self")
+                },false,5,5);
+            });
+        </script>
+
+    </head>
+   <body>  
+        <div class="buttons"></div>
+        <div class="sections"></div>
+        <div class="hidden">
+
+
+            <!--
+
+            <div id="ID of content">
+                html of content
+            </div>
+
+            -->
+
+            <div id="home">
+                <div style="margin-left: auto; margin-right: auto;"><img src="media/tinman.png"/></div>
+            </div>
+            <div id="canstruction">
+                <img src="CANstruction.jpeg">
