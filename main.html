@@ -308,19 +308,48 @@
 */
                 new Section("About Us","aboutus",function() {
                     console.log("it works");
+                    document.getElementById("chairmans").play();
+                },true);
+                new Section("Our Stats","stats",function() {
+                    console.log("it works");
+                    document.getElementById("chairmans").stop();        
                 },true); 
-                new Section("Our Stats","stats",function() {},true); 
-                new Section("Our Robot","robot",function() {},true); 
-                new Section("Engineering Education","edu",function() {},true); 
-                new Section("Community Outreach","outreach",function() {},true); 
-                new Section("Entrepreneurship","entrepreneurship", function() {},true);
-                new Section("Growing FIRST","first", function() {},true);
-                new Section("Texas Robot Roundup","trr", function() {},true);
+                new Section("Our Robot","robot",function() {
+                    console.log("it works");
+                    document.getElementById("chairmans").stop();
+                },true); 
+                new Section("Engineering Education","edu",function() {
+                    console.log("it works");
+                    document.getElementById("chairmans").stop();
+                },true); 
+                new Section("Community Outreach","outreach",function() {
+                        console.log("it works");
+                        document.getElementById("chairmans").stop();
+                },true); 
+                new Section("Entrepreneurship","entrepreneurship", function() {
+                        console.log("it works");
+                        document.getElementById("chairmans").stop();
+                },true);
+                new Section("Growing FIRST","first", function() {
+                        console.log("it works");
+                },true);
+                new Section("Texas Robot Roundup","trr", function() {
+                        console.log("it works");
+                },true);
 
 //              THESE TWO ARE IN THE BOTTOM RIGHT
-                new Section("Test","test", function() {},true,5,70);
-                new Section("Home","home", function() {},false,5,5);
+                new Section("Illustrations","pictures",function() {
+                    console.log("it works");
+                    window.open("perso.html","_self")
+                }, true,5,140);
+                new Section("Partnerships","partner", function() {
+                    console.log("it works");
+                },true,5,70);
+                new Section("Home","home", function() {
+                        console.log("it works");
+                },false,5,5);
             });
+
         </script>
     </head>
     <body>
@@ -335,7 +364,7 @@
 
             -->
             <div id="home">
-                <div style="margin-left: auto; margin-right: auto; height: 400px; width: 400px; border-radius: 200px; background-color: #6699bb"></div>
+                <                <div style="margin-left: auto; margin-right: auto;"><img src="media/tinman.png"/></div>
             </div>
             <div id="aboutus">
                 <h1>Team 2158 - ausTIN CANs</h1>
@@ -1393,6 +1422,20 @@
                     </p>
                     <h2>Talk to us to find out how to participate in TRR!</h2>
                 </div>
+            </div>
+                <div id=partner>
+                    <h1>Partnerships</h1>
+                        <p>We nurture partnerships with many companies who provide mentors, funds, materials, and educational experiences for the team,
+                           including <strong> NI</strong>, <strong> Texas Instruments </strong>, <strong>UT</strong>, <strong>Draker Energy</strong>, 
+                            <strong>Oracle</strong>, <strong>Intel</strong>, and <strong> Google</strong>. We've developed partnerships with the 
+                            <strong>Austin Police Department </strong>and quadcopter innovators <strong>DJI</strong>, to design, assemble, and program 
+                            our own quadcopters. Our connection with NI, which began when they paid our rookie year entry fee, grew into a mutually beneficial 
+                            partnership. We were the first group to test NI's MyDAQ for integration into school curriculum and were featured in NI's STEM 
+                            education videos. In addition to yearly invitations to demo robots at NIWeek, we were a 2011 Keynote Speaker, presenting an 
+                            innovative knee brace design. Our members, working with UT students and <strong>Austin Regional Clinic</strong>, used FRC materials 
+                            and NI products to solve a medical challenge, gaining valuable real world experience. In 2013, we worked with 
+                            <strong>Waterloo Labs</strong>and teams <strong>2468 </strong>and <strong>2881</strong> to build a robot waiter for NIWeek. 
+                            This interteam-business partnership promoted FIRST to NIWeek attendees.</p></div></div>
             </div>
         </div>
     </body>
