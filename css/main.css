@@ -6,6 +6,7 @@ body {
     padding: 0px;
     height: 100%;
     width: 100%;
+   background-image: url(media/Kinetic%20Background%2003.png);
 	background-attachment: fixed;
 }
 
@@ -81,3 +82,17 @@ h1, h2, h3 {
 p {
     margin-bottom: 0px;
 }
+#preso {
+	float: right;
+	visibility: visible;
+	position: fixed;
+	width: 131px;
+	bottom: 200px;
+	right: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #009;
+	text-align: center;
+	font-weight: bold;
+	font-size: x-large;
+}
+scrollbar[orient="vertical"], scrollbar[orient="vertical"] thumb, scrollbar[orient="vertical"] scrollbarbutton { min-width: 45px !important; -moz-appearance: none !important; }
